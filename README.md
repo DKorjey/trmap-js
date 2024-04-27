@@ -4,6 +4,9 @@ Team Run Map interface for JS/TS
 ### Example
 This code will generate start point and bridges that go up to the 2nd checkpoint
 ```ts
+import { TRMap, Block, Checkpoint, Vector2, Bridge, Int } from "trmap-js";
+import { writeFileSync } from "fs";
+
 const map = new TRMap();
 
 map.blocks.push(
