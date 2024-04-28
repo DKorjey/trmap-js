@@ -1,8 +1,8 @@
-import { BlockWithParameters } from "../../classes/abstract/BlockWithParameters";
+import { WithCatalogs } from "../../classes/abstract/WithCatalogs";
 import { BlockType, Color } from "../../helpers/types";
 import { ObjectColorSetterInfo } from "./ObjectColorSetterInfo";
 
-export class ObjectColorSetter extends BlockWithParameters<ObjectColorSetterInfo> {
+export class ObjectColorSetter extends WithCatalogs<ObjectColorSetterInfo> {
 	public readonly type: BlockType = 44;
 	protected readonly isConst: boolean = true;
 	protected params: [Color] = [Color('fff')];
